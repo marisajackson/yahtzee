@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Luckiest+Guy);
+body {
+  background-image: url('../media/bg.svg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  margin: 20px 5px 5px 5px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 60px;
+}
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: 'Open Sans', sans-serif;
+}
+#roll {
+  background-color: #ca3c3c;
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 3px;
+}
+.frozen {
+  opacity: .5;
+}
+.arrow {
+  width: 63px;
+  height: 63px;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+}
+#scorecard {
+  background-color: white;
+  margin: auto;
+}
+#scoring {
+  margin: auto;
+}
+#rolling {
+  margin: auto;
+}
+#addplayer {
+  margin: auto;
+}
+.vertical {
+  background-color: #fee452 !important;
+}
+.horizontal {
+  background-color: #ff5e6b !important;
+}
