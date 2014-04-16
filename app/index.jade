@@ -3,33 +3,30 @@ html(lang='en')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Yahtzee
+    title Yahtzee!
     link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0-rc-1/pure-min.css')
     link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0-rc-1/grids-responsive-min.css')
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 Yahtzee
+    h1 Yahtzee!
 
     .pure-g
       .pure-u-1
-        form.pure-form
+        form.pure-form#addplayer
           fieldset
-              h3 New Player
-              input#username(type='text' placeholder='Username')
-              input#avatar(type='text' placeholder='Avatar URL')
-              button#add.pure-button.pure-button-primary Add Player
+            input#username(type='text' placeholder='Username')
+            | &nbsp;
+            input#avatar(type='text' placeholder='Avatar URL')
+            | &nbsp;
+            button#add.pure-button.pure-button-primary Add Player
 
-    .pure-g
-      .pure-u-1
-        img.arrow#up(src='./media/up.png')
-        img.arrow#down(src='./media/down.png')
-        img.arrow#left(src='./media/left.png')
-        img.arrow#right(src='./media/right.png')
-        form.pure-form
-          fieldset
-              h2 Score
-              input#score(type='text' placeholder='Score')
-              button#add-score.pure-button.pure-button-primary Add Score
+    #rolling
+      img.dice(src='./media/1.png')
+      img.dice(src='./media/2.png')
+      img.dice(src='./media/3.png')
+      img.dice(src='./media/4.png')
+      img.dice(src='./media/5.png')
+    button#roll.pure-button Roll
 
     .pure-g
       .pure-u-1
@@ -54,10 +51,18 @@ html(lang='en')
               th Total
           tbody
 
+  #scoring
+      img.arrow#up(src='./media/up.png')
+      img.arrow#down(src='./media/down.png')
+      img.arrow#left(src='./media/left.png')
+      img.arrow#right(src='./media/right.png')
+      form.pure-form
+        fieldset
+          input#score(type='text' placeholder='Score')
+          | &nbsp;
+          button#add-score.pure-button.pure-button-primary Add Score
 
-    .pure-g
-      .pure-u-1-2
-      .pure-u-1-2
+  img(src='./media/scoring.jpg')
 
   script(src='./js/vendor/jquery-2.1.0.js')
   script(src='./js/source/main.js')

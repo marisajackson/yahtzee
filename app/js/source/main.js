@@ -5,12 +5,34 @@
 
   var currentUser = 0;
   var currentRoll = 3;
+  var frozen;
+  var numDice;
 
   function init(){
     $('#add').click(add);
     $('.arrow').click(arrow);
     $('body').keydown(move);
     $('#add-score').click(addScore);
+    $('#roll').click(roll);
+    $('.dice').click(freeze);
+
+    numDice = $('.dice').length;
+    frozen = $('.frozen').length;
+  }
+
+  function freeze(){
+    $(this).toggleClass('frozen');
+  }
+
+  function roll(){
+    var count = numDice - frozen;
+    var $dice = $('.dice:not(.frozen)');
+
+    for (var i = 0; i < count; i++){
+      var num = Math.floor(Math.random() * 6) + 1;
+      $($dice[i]).attr('src', './media/' + num + '.png');
+    }
+
   }
 
   function addScore(event){

@@ -1,10 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans); //font
+@import url(http://fonts.googleapis.com/css?family=Luckiest+Guy);
 
 body{
   background-image: url('../media/bg.svg');
   background-size: cover;
   background-attachment: fixed;
-  margin: 5px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 5px 5px 5px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 60px;
 }
 
 html, button, input, select, textarea,
@@ -13,45 +21,21 @@ html, button, input, select, textarea,
   font-family: 'Open Sans', sans-serif;
 }
 
-.button-success,
-.button-error,
-.button-warning,
-.button-secondary {
+#roll {
+  background-color: rgb(202, 60, 60);
   color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 3px;
 }
 
-.button-success {
-  background: rgb(82, 227, 101);
+.frozen {
+  opacity: .5;
 }
 
-.button-error {
-  background: rgb(210, 115, 78);
-}
-
-.button-warning {
-  background: rgb(223, 117, 20);
-}
-
-.button-secondary {
-  background: rgba(108, 67, 223, 0.55);
-}
-
-.button-xsmall {
-  font-size: 50%;
-}
-
-.button-small {
-  font-size: 85%;
-}
-
-.button-large {
-  font-size: 110%;
-}
-
-.button-xlarge {
-  font-size: 150%;
+.arrow {
+  width: 63px;
+  height: 63px;
 }
 
 .avatar {
@@ -61,6 +45,20 @@ html, button, input, select, textarea,
 
 #scorecard {
   background-color: white;
+  margin: auto;
+}
+
+#scoring {
+  margin: auto;
+}
+
+
+#rolling {
+  margin: auto;
+}
+
+#addplayer {
+  margin: auto;
 }
 
 .vertical {
